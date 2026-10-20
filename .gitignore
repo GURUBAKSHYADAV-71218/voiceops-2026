@@ -1,0 +1,24 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+outputs/
+tools/tickets_created.csv
+# Supplied capstone dataset (keep outside submission repository/ZIP)
+data/
+kb/
+practice/
+
+# Local outputs and generated artifacts
+outputs/
+
+# Local backups and audit notes
+README_backup.md
+run.py.bak
+src/baseline.py.bak
+project_audit.txt
+
+# Generated ticket records
+tools/tickets_created.csv
