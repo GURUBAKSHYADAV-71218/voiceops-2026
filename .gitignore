@@ -22,3 +22,8 @@ project_audit.txt
 
 # Generated ticket records
 tools/tickets_created.csv
+
+# Local submission packages — never commit ZIPs or staging folders
+/emergency_submission.zip
+/emergency_submission/
+/submission_candidate.zip
