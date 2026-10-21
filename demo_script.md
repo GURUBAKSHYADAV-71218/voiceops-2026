@@ -1,32 +1,34 @@
 ﻿# VoiceOps 2026 — 2-Minute Demo Script
 
-## 0:00–0:15 | Introduction
-"VoiceOps is a voice-enabled customer support agent for ZentroMart. It combines knowledge-base retrieval, conversation handling, verified order lookup, ticket escalation, and Gnani.ai speech services."
+## 0:00–0:15 — Introduction
+“Hello, this is VoiceOps 2026, an AI-powered customer support agent for ZentroMart. It combines knowledge retrieval, order-support tools, ticket escalation, and voice processing.”
 
-## 0:15–0:35 | Policy question
-"First, I ask a customer-support policy question. The agent retrieves relevant knowledge-base content and uses it to formulate a response."
+## 0:15–0:35 — Policy Questions
+“The agent retrieves relevant information from the supplied knowledge base and uses it to answer customer questions. This helps keep responses grounded in the available company policies.”
 
-Show: one policy question, the response, and retrieved source chunks.
+**Show:** The relevant source documents and the retrieval/answer flow, or a previously saved result.
 
-## 0:35–0:55 | Order security
-"Order information is protected by a verification step. The agent must not disclose verified order details when verification fails."
+## 0:35–0:55 — Secure Order Lookup
+“The agent supports order lookup through CSV-backed tools. Customer verification is required before protected order details can be disclosed.”
 
-Show: an order lookup request and the verification prompt. Do not display real API keys or sensitive customer data.
+**Show:** The order lookup code and the verification test. Do not expose real API keys or sensitive customer details.
 
-## 0:55–1:15 | Escalation
-"When a customer needs human assistance, the system can create a support ticket and report the result."
+## 0:55–1:10 — Escalation
+“When an issue needs further assistance, the agent can create an escalation ticket and retain the result for follow-up.”
 
-Show: a successful ticket creation and its confirmation, using test data.
+**Show:** The ticket tool or a safe example of its output.
 
-## 1:15–1:35 | Voice workflow
-"The audio runner transcribes customer audio, processes the request, and saves the transcript, reply, retrieved source chunks, and synthesized audio."
+## 1:10–1:30 — Voice Pipeline
+“The audio runner accepts supported audio files and saves the transcript, generated reply, retrieved source chunks, and a JSON result for each input.”
 
-Show: the output folder and one completed live example, if available.
+**Show:** The pipeline code and existing output artifacts. A mocked test is not proof of a complete live voice interaction.
 
-## 1:35–1:50 | Testing
-"The current offline checks include five passing unit and pipeline tests, dataset validation, and a retrieval evaluation with 43 passes, 4 failures, and 5 skipped cases."
+## 1:30–1:50 — Evaluation
+“Dataset validation passed across all nine supplied CSV files and the knowledge-base documents. All five automated tests passed. Retrieval evaluation passed 43 of 47 evaluated questions, or 91.5%. This is a retrieval metric, not overall answer accuracy.”
 
-Clarify that the multi-file pipeline test uses mocks and that the retrieval result is not overall answer accuracy.
+**Show:** The validation and test results.
 
-## 1:50–2:00 | Conclusion
-"Next, I am completing the live end-to-end voice check and the measured prompt-only versus RAG comparison."
+## 1:50–2:00 — Honest Status
+“The project includes a baseline-versus-RAG comparison script and a manual rating rubric. Live end-to-end voice validation and comparative evaluation remain pending because of the available LLM API quota.”
+
+“Thank you.”
