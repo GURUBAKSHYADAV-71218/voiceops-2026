@@ -27,3 +27,6 @@ tools/tickets_created.csv
 /emergency_submission.zip
 /emergency_submission/
 /submission_candidate.zip
+
+# Local evaluation script backups
+evaluation/*.bak
